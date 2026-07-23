@@ -1,11 +1,14 @@
 # Demask ROI Lada
 
-Demask ROI Lada is a transparent, screen-wide region-of-interest restoration
+Demask ROI Lada is a transparent, screen-wide region-of-interest mosaic restoration
 overlay for Windows. It captures a square around the pointer and runs the Lada
-BasicVSR++ v1.2 temporal restoration model locally on an NVIDIA GPU.
+BasicVSR++ v1.2 temporal restoration model locally on an NVIDIA GPU. 
 
 The overlay works at the screen-capture level, so it is independent of browser
-DOM structure and video-player implementation.
+DOM structure and video-player implementation. Videos do not need to be
+downloaded first: compatible web video playback, including JAV, can be viewed
+and processed in real time.
+
 
 > [!IMPORTANT]
 > Model output is a plausible reconstruction, not recovery of the original
