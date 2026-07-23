@@ -1,5 +1,0 @@
-# Lada license
-
-The vendored Lada source is licensed under the GNU Affero General Public
-License v3.0. The complete license text is included at
-[`../../LICENSE`](../../LICENSE).
