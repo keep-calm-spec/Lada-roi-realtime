@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  static-checks:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check JavaScript syntax
+        shell: pwsh
+        run: |
+          node --check desktop/main.cjs
+          node --check desktop/preload.cjs
+          node --check desktop/renderer.js
+          node --check desktop/lada-worker.cjs
+
+      - name: Compile Python worker
+        run: python -m py_compile python/lada_worker.py
+
+      - name: Ensure model weights and build artifacts are not tracked
+        shell: pwsh
+        run: |
+          $forbidden = git ls-files | Select-String -Pattern '\.(pth|pt|onnx|exe)$'
+          if ($forbidden) {
+            $forbidden
+            throw "Binary model or executable files must be published outside the source repository."
+          }

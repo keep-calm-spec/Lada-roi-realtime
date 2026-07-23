@@ -1,0 +1,19 @@
+* text=auto
+
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.js text eol=lf
+*.cjs text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+*.onnx binary
+*.pt binary
+*.pth binary
+*.exe binary
+
+# Preserve the pinned upstream snapshot and exclude it from repository language stats.
+vendor/lada/** -text linguist-vendored

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self' blob:; media-src 'self' blob:; worker-src 'self' blob:; img-src 'self' data:"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demask ROI</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <video id="screenSource" autoplay muted playsinline></video>
+
+    <section id="roiLens" class="roi-lens" hidden aria-hidden="true">
+      <canvas id="roiOutput"></canvas>
+      <span class="roi-label">LADA V1.2</span>
+    </section>
+
+    <aside id="hud" class="hud" data-state="loading">
+      <span class="status-dot" aria-hidden="true"></span>
+      <strong id="statusText">Starting screen capture and the Lada model</strong>
+      <span id="metrics">—</span>
+      <span class="shortcuts">Ctrl+R toggle · Ctrl+=/- resize · Ctrl+Q quit</span>
+    </aside>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>

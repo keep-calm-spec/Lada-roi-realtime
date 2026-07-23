@@ -1,0 +1,36 @@
+# Dependencies and local runtimes
+node_modules/
+.venv-lada/
+.uv-cache/
+.uv-python/
+.electron-cache/
+.electron-builder-cache/
+.npm-cache/
+
+# Generated applications and build intermediates
+dist/
+worker-dist/
+.cache/
+output/
+.runtime-temp/
+
+# Model weights are downloaded by scripts/download-model.ps1
+models/*
+!models/.gitkeep
+
+# Tool and editor state
+.playwright-cli/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+
+# Logs and operating-system files
+*.log
+*.tmp
+npm-debug.log*
+Thumbs.db
+.DS_Store
