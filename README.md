@@ -35,6 +35,8 @@ The tested system uses an NVIDIA GeForce RTX 2060 with 6 GiB VRAM.
 
 Run:
 
+download Lada and move the main projects to ./vendor (https://github.com/ladaapp/lada)
+
 ```text
 setup-dev.cmd
 start-roi.cmd
@@ -125,6 +127,22 @@ fifth frame. Large pointer movements and ROI-size changes reset the history.
 
 DRM-protected content may appear black through the Windows screen-capture API.
 
+## Download the portable application
+
+A ready-to-run Windows build is available from Google Drive:
+
+[Download Demask ROI 1.1.1 portable](https://drive.google.com/file/d/1ZcgaqtrlxZW-xtvB92efo9zSdFoL9eYk/view?usp=drive_link)
+
+SHA-256:
+
+```text
+1c0bde55db6b1c228e0384b2911116bb631e58e6e018fd50392e7bc0e4fd03e5
+```
+
+The portable build includes the inference worker, model, PyTorch, CUDA runtime,
+and cuDNN. It does not require a Python installation or the CUDA Toolkit, but a
+compatible NVIDIA driver is still required.
+
 ## Repository layout
 
 ```text
@@ -150,3 +168,10 @@ The Lada source is vendored from
 
 This project is licensed under the GNU Affero General Public License v3.0.
 See [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+If this project is useful to you, you can support its continued development
+through the following EVM-compatible wallet address (Ethereum address):
+
+```text
+0x50a85a684ed4e5abb9e57c823acf72a9c21f79d7
+```
