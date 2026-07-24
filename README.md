@@ -4,7 +4,7 @@ Other languages:
 [简体中文](https://github.com/keep-calm-spec/Lada-win-roi/blob/main/README.zh-CN.md) |
 [日本語](https://github.com/keep-calm-spec/Lada-win-roi/blob/main/README.ja.md)
 
-Demask ROI Lada is a transparent, screen-wide region-of-interest mosaic restoration
+Demask ROI Lada is a transparent, screen-wide region-of-interest JAV mosaic restoration
 overlay for Windows. It captures a square around the pointer and runs the Lada
 BasicVSR++ v1.2 temporal restoration model locally on an NVIDIA GPU. 
 
