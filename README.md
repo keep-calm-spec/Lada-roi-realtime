@@ -14,7 +14,7 @@ and processed in real time.
 
 ## Demo
 
-[./test.gif]
+(./test.gif)
 
 > [!IMPORTANT]
 > Model output is a plausible reconstruction, not recovery of the original
