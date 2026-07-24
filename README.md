@@ -12,6 +12,9 @@ DOM structure and video-player implementation. Videos do not need to be
 downloaded first: compatible web video playback, including JAV, can be viewed
 and processed in real time.
 
+## Demo
+
+[▶ Watch the demo video](./test.mp4)
 
 > [!IMPORTANT]
 > Model output is a plausible reconstruction, not recovery of the original
