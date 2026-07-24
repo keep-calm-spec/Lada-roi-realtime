@@ -40,6 +40,18 @@ and processed in real time.
 
 The tested system uses an NVIDIA GeForce RTX 2060 with 6 GiB VRAM.
 
+### Tested local configuration
+
+- OS: Windows 11 Pro, 64-bit (build 26200)
+- CPU: AMD Ryzen 7 3700X (8 cores, 16 threads)
+- Memory: 32 GiB
+- GPU: NVIDIA GeForce RTX 2060 with 6 GiB VRAM
+- GPU compute capability: 7.5
+- NVIDIA driver: 591.86
+- PyTorch: 2.8.0+cu126
+- CUDA runtime: 12.6
+
+
 ## Quick start from source
 
 Run:
