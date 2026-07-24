@@ -14,7 +14,7 @@ and processed in real time.
 
 ## Demo
 
-[▶ Watch the demo video](./test.mp4)
+[./test.gif]
 
 > [!IMPORTANT]
 > Model output is a plausible reconstruction, not recovery of the original
