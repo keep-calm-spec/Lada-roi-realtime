@@ -38,7 +38,7 @@ NVIDIA GeForce RTX 2060（VRAM 6 GiB）搭載環境で動作確認済みです�
 
 ビルド済みの Windows 版を Google Drive からダウンロードできます。
 
-[Demask ROI 1.1.1 ポータブル版をダウンロード](https://drive.google.com/file/d/1ZcgaqtrlxZW-xtvB92efo9zSdFoL9eYk/view?usp=drive_link)
+[Demask ROI 1.1.1 ポータブル版をダウンロード](https://drive.google.com/file/d/14ZPR3erjcQOUzE2kEEhi_ZMFI7JlaJAt/view?usp=drive_link)
 
 SHA-256：
 
