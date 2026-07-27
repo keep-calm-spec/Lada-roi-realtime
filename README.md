@@ -93,7 +93,7 @@ models/lada_mosaic_restoration_model_generic_v1.2.pth
 Expected SHA-256:
 
 ```text
-d404152576ce64fb5b2f315c03062709dac4f5f8548934866cd01c823c8104ee
+70FDA0BDDDEA22CBA1656B9095542470D8F00E080F8196B05F28A4250A32616E
 ```
 
 The source URL is the official
