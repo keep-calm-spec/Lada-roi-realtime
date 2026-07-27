@@ -36,7 +36,7 @@ Lada ROI Realtime 是一款 Windows 实时 ROI 马赛克修复浮层，
 
 可以从 Google Drive 下载已经打包好的 Windows 版本：
 
-[下载 Demask ROI 1.1.1 便携版](https://drive.google.com/file/d/1ZcgaqtrlxZW-xtvB92efo9zSdFoL9eYk/view?usp=drive_link)
+[下载 Demask ROI 1.1.1 便携版](https://drive.google.com/file/d/14ZPR3erjcQOUzE2kEEhi_ZMFI7JlaJAt/view?usp=drive_link)
 
 SHA-256：
 
