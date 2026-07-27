@@ -152,12 +152,12 @@ DRM-protected content may appear black through the Windows screen-capture API.
 
 A ready-to-run Windows build is available from Google Drive:
 
-[Download Demask ROI 1.1.1 portable](https://drive.google.com/file/d/1ZcgaqtrlxZW-xtvB92efo9zSdFoL9eYk/view?usp=drive_link)
+[Download Demask ROI 1.1.1 portable](https://drive.google.com/file/d/14ZPR3erjcQOUzE2kEEhi_ZMFI7JlaJAt/view?usp=drive_link)
 
 SHA-256:
 
 ```text
-1c0bde55db6b1c228e0384b2911116bb631e58e6e018fd50392e7bc0e4fd03e5
+BB1FCC3BAE2CF0368166F55D56E32FA8404A53C09DA3C2D74063D3A0A9D24D9C
 ```
 
 The portable build includes the inference worker, model, PyTorch, CUDA runtime,
