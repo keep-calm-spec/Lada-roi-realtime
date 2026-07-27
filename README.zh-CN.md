@@ -47,6 +47,46 @@ SHA-256：
 便携版已经包含推理进程、模型、PyTorch、CUDA 运行库和 cuDNN，无需另外
 安装 Python 或 CUDA Toolkit，但仍然需要兼容的 NVIDIA 驱动。
 
+## Troubleshooting
+
+### `WinError 126` while loading `cudnn64_9.dll`
+
+If startup fails at `lada:wait-ready` and the worker traceback contains
+`OSError: [WinError 126]` while loading `torch\lib\cudnn64_9.dll`, PyTorch could
+not load cuDNN or one of its dependencies. This is a native runtime loading
+failure, not a model-weight or `lada:wait-ready` error.
+
+Try the following steps in order:
+
+1. Install or repair the official
+   [Microsoft Visual C++ 2015-2022 Redistributable (x64)](https://aka.ms/vc14/vc_redist.x64.exe),
+   then restart Windows.
+2. Update the NVIDIA display driver, restart Windows, and verify the driver in
+   Command Prompt or PowerShell:
+
+   ```powershell
+   nvidia-smi
+   ```
+
+   The command must detect a CUDA-capable NVIDIA GPU. The CUDA Toolkit is not
+   required because the application already includes its CUDA runtime.
+3. Open **Windows Security > Virus & threat protection > Protection history**
+   and check whether it quarantined `cudnn*.dll`, `cublas*.dll`,
+   `torch_cuda.dll`, or `lada-worker.exe`. Do not disable Defender globally.
+   Only restore or allow a file after verifying that the application came from
+   the official project release and that its SHA-256 checksum matches.
+4. Make sure the Windows system drive has at least 8 GiB free. The portable
+   executable temporarily extracts approximately 3.7 GiB of worker files under
+   `%TEMP%` when it starts.
+
+If the error remains, attach the output of `nvidia-smi` and this diagnostic log
+to the issue:
+
+```text
+%APPDATA%\demask-roi-desktop\logs\lada-worker.log
+```
+
+
 ## 从源码快速启动
 
 运行：
